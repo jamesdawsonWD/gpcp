@@ -166,7 +166,9 @@ export default {
     @include breakpoint(mobileonly) {
         .section-content {
             width: 400px;
-
+            .sub-title {
+                width: 300px;
+            }
             .team {
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -175,7 +177,9 @@ export default {
     @include breakpoint(tablet) {
         .section-content {
             width: 700px;
-
+            .sub-title {
+                width: 500px;
+            }
             .team {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -184,7 +188,9 @@ export default {
     @include breakpoint(phablet) {
         .section-content {
             width: 450px;
-
+            .sub-title {
+                width: 400px;
+            }
             .team {
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -210,6 +216,9 @@ export default {
                     color: white;
                 }
             }
+            .sub-title {
+                width: 700px;
+            }
             .team {
                 grid-template-columns: repeat(2, 1fr);
                 width: 100%;
@@ -220,7 +229,7 @@ export default {
     }
     @include breakpoint(desktop) {
         .section-content {
-            width: 1500px;
+            width: 1300px;
 
             text-align: center;
 
@@ -238,6 +247,9 @@ export default {
                 p {
                     color: white;
                 }
+            }
+            .sub-title {
+                width: 800px;
             }
             .team {
                 grid-template-columns: repeat(3, 1fr);

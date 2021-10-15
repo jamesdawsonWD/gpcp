@@ -396,7 +396,7 @@ export default {
     @include breakpoint(desktop) {
         padding-bottom: 300px;
         .roadmap {
-            width: 1500px;
+            width: 1300px;
 
             .roadmap-title {
                 width: 600px;
@@ -419,7 +419,7 @@ export default {
             opacity: 1;
             right: 50px;
             img {
-                height: 300px;
+                height: 250px;
             }
         }
     }

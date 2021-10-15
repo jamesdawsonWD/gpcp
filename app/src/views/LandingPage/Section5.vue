@@ -186,7 +186,7 @@ export default {
         }
         .side3 {
             position: absolute;
-            height: 1000px;
+            height: 900px;
             right: -250px;
             bottom: -30px;
             z-index: 6;
@@ -195,12 +195,12 @@ export default {
     }
     @include breakpoint(desktop) {
         .section-content {
-            width: 1400px;
+            width: 1200px;
             justify-content: flex-start;
             align-items: flex-start;
             .content-container {
                 .info {
-                    width: 1000px;
+                    width: 700px;
                     margin-left: 0;
                     text-align: left;
                 }
