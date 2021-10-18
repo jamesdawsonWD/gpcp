@@ -6,8 +6,8 @@
                     <div class="text">
                         <h2>Join the <span>community</span> and prepare for the party</h2>
                         <p class="sub-title">
-                            Don't miss out on the partry of the biggest party that the MetaVerse has to offer.
-                            Come join us on this adventure!
+                            Don't miss out on the biggest Guinea Pig party that the MetaVerse has to offer.
+                            Grab your costume and lets get ready!
                         </p>
                     </div>
                     <a href="https://discord.gg/bT9q7r2vaT" target="_blank"

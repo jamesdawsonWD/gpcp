@@ -4,8 +4,8 @@
             <div ref="title" class="roadmap-title">
                 <h2>Roadmap</h2>
                 <p>
-                    This is our roadmap towards an interactive and customisable Guinea Pig Verse. These are
-                    our base concepts but we havve so many more ideas we want to explore!
+                    This is our roadmap towards an interactive and customisable Guinea Pig Verse. We will be
+                    adding to and improving this roadmap regularly, so stay tuned!
                 </p>
             </div>
             <RoadmapArticle
