@@ -6,8 +6,8 @@
                     <div class="text">
                         <h2>Join the <span>community</span> and prepare for the party</h2>
                         <p class="sub-title">
-                            You have been invited to the party of the century. Grab your Guinea Pig and their
-                            favourite outfit and prepare to get down and boogie.
+                            Don't miss out on the partry of the biggest party that the MetaVerse has to offer.
+                            Come join us on this adventure!
                         </p>
                     </div>
                     <a href="https://discord.gg/bT9q7r2vaT" target="_blank"

@@ -14,7 +14,9 @@
             </div>
             <div class="nav-container">
                 <div class="nav">
-                    <opensea class="social-media" />
+                    <a href="https://opensea.io/collection/guinea-pig-costume-party" target="_blank">
+                        <opensea class="social-media" />
+                    </a>
                     <a href="https://discord.gg/bT9q7r2vaT" target="_blank"
                         ><discord class="social-media"
                     /></a>

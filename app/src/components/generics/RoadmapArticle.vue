@@ -48,7 +48,6 @@ export default {
         }
         & > div {
             display: flex;
-            height: 100px;
             justify-content: flex-start;
             align-items: center;
             text-align: left;
@@ -80,6 +79,85 @@ export default {
     .highlight-circle {
         background: var(--button-color);
         color: white;
+    }
+
+    @include breakpoint(mobileonly) {
+        .circle {
+            height: 70px;
+            width: 70px;
+        }
+
+        .container {
+            width: 75px;
+        }
+
+        .info {
+            p {
+                margin-top: 25px;
+            }
+        }
+    }
+    @include breakpoint(tablet) {
+        .side1 {
+            height: 40%;
+            bottom: -20px;
+            left: -100px;
+        }
+        .side2 {
+            height: 40%;
+            bottom: -20px;
+            right: -100px;
+        }
+        .header {
+            width: 500px;
+        }
+    }
+    @include breakpoint(phablet) {
+        .side1 {
+            height: 40%;
+            bottom: -20px;
+            left: -100px;
+        }
+        .side2 {
+            height: 40%;
+            bottom: -20px;
+            right: -100px;
+        }
+        .header {
+            width: 500px;
+        }
+    }
+
+    @include breakpoint(laptop) {
+        .side2 {
+            height: 60%;
+            bottom: -20px;
+            right: -100px;
+        }
+        .header {
+            width: 500px;
+        }
+
+        .side1 {
+            height: 60%;
+            bottom: -20px;
+            left: -100px;
+        }
+    }
+    @include breakpoint(desktop) {
+        .side2 {
+            height: 70%;
+            bottom: -20px;
+            right: -100px;
+        }
+        .side1 {
+            height: 70%;
+            bottom: -20px;
+            left: -100px;
+        }
+        .header {
+            width: 800px;
+        }
     }
 }
 </style>

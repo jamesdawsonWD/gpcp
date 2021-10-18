@@ -4,8 +4,8 @@
             <div ref="title" class="roadmap-title">
                 <h2>Roadmap</h2>
                 <p>
-                    This roadmap outlines our goals and where we want to take. We have a lot of ideas and
-                    concepts that we are working on. It may evolve over time and hopefully become even better!
+                    This is our roadmap towards an interactive and customisable Guinea Pig Verse. These are
+                    our base concepts but we havve so many more ideas we want to explore!
                 </p>
             </div>
             <RoadmapArticle
@@ -126,18 +126,18 @@ export default {
                     title: 'RELEASE 5,555 GENISIS TOKENS',
                     reached: false,
                     description:
-                        'The launch date will be announced, bow ties will be places and the party will commence. Bring the champers and all the pea flakes you can fit in your mouth. This is going to be a banger.'
+                        'The launch date will be announced, bow ties will be tied and the party will commence. Bring the champers and all the pea flakes you can fit in your mouth. This is going to be a banger.'
                 },
                 {
                     title: 'DEVELOP "PEA FLAKE" ERC-20 TOKEN',
                     reached: false,
                     description:
-                        '"Pea flakes" are a Guinea Pigs favourite treat. This is well known alpha. Pea flakes are valuable to a pig and they are tasty. Pea flakes may be valuable to other pigs. Pea flakes may allow you into speacial places and purchase speacial things. Tasty treat treats.'
+                        '"Pea flakes" are a Guinea Pig\'s favourite treat. This is well known alpha. Pea flakes are valuable to a pig and they are tasty. Pea flakes may be valuable to other pigs. Pea flakes may allow you into speacial places and purchase speacial things. Tasty treat treats.'
                 },
                 {
                     title: '???',
                     reached: false,
-                    description: 'TOP SECRET ALPHA COMING SOON'
+                    description: 'TOP SECRET PEA FLAKE ALPHA COMING SOON'
                 }
             ]
         };

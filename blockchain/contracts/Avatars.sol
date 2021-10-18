@@ -57,7 +57,7 @@ contract Avatars is ERC721Enumerable {
         uint256 lastClaim = avatars[tokenID].lastClaimPrice;
         require(lastClaim < totalRoyalties, 'Nothing to claim');
 
-        uint256 amount = totalRoyalties.sub(lastClaim).mul(avatars[tokenID].tokenShare).div(100 ether);
+        uint256 amount = totalRoyalties.sub(lastClaim).div(totalNFTs);
         payable(msg.sender).transfer(amount);
 
         avatars[tokenID].lastClaimPrice = totalRoyalties;

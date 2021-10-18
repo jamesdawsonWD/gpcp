@@ -17,7 +17,7 @@
                     <img :src="require(`@/assets/img/` + item.image)" />
                     <div class="name-info">
                         <h3>{{ item.name }}</h3>
-                        <a href="https://twitter.com/mr_nft1"><twitter class="twitter-logo"/></a>
+                        <a v-if="item.twitter != ''" :href="item.twitter"><twitter class="twitter-logo"/></a>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export default {
                 },
                 {
                     name: 'Rami',
-                    twitter: 'www.twitter.com',
+                    twitter: '',
                     image: '6.png'
                 },
                 {
@@ -56,8 +56,13 @@ export default {
                 },
                 {
                     name: 'Gareth',
-                    twitter: 'www.twitter.com',
+                    twitter: 'www.twitter.com/gdawson771',
                     image: '8.png'
+                },
+                {
+                    name: 'Declan',
+                    twitter: 'www.twitter.com/pl0xy',
+                    image: 'declan.png'
                 }
             ]
         };
@@ -134,6 +139,8 @@ export default {
                 }
                 .name-info {
                     margin-top: 10px;
+                    height: 70px;
+
                     width: 300px;
                     display: flex;
                     justify-content: space-between;

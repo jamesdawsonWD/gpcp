@@ -5,7 +5,10 @@
                 <h2>G.P <sushi /> C.P</h2>
             </div>
             <div class="nav">
-                <a class="social-media" href="https://discord.gg/bT9q7r2vaT" target="_blank"
+                <a
+                    class="social-media"
+                    href="https://opensea.io/collection/guinea-pig-costume-party"
+                    target="_blank"
                     ><opensea class="social-media"
                 /></a>
                 <a class="social-media" href="https://discord.gg/bT9q7r2vaT" target="_blank"><discord /></a>
