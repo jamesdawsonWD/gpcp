@@ -41,7 +41,7 @@ export default {
             team: [
                 {
                     name: 'James',
-                    twitter: 'www.twitter.com/mr_nft1',
+                    twitter: 'https://www.twitter.com/mr_nft1',
                     image: 'jamesavatar.jpg'
                 },
                 {
@@ -51,17 +51,17 @@ export default {
                 },
                 {
                     name: 'Andrew',
-                    twitter: 'www.twitter.com/adawson111',
+                    twitter: 'https://www.twitter.com/adawson111',
                     image: '4.png'
                 },
                 {
                     name: 'Gareth',
-                    twitter: 'www.twitter.com/gdawson771',
+                    twitter: 'https://www.twitter.com/gdawson771',
                     image: '8.png'
                 },
                 {
                     name: 'Declan',
-                    twitter: 'www.twitter.com/pl0xy',
+                    twitter: 'https://www.twitter.com/pl0xy',
                     image: 'declan.png'
                 }
             ]

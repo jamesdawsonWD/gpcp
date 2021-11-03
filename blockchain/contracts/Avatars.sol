@@ -17,7 +17,7 @@ contract Avatars is ERC721Enumerable {
         uint256 tokenShare;
         uint256 lastClaimPrice;
     }
-    mapping(uint256 => Avatar) public avatars;
+    mapping(uint256 => uint256) public lastClaimPrice;
 
     event MintToken(uint256 tokenID, uint256 share, address recipient);
 
@@ -46,7 +46,7 @@ contract Avatars is ERC721Enumerable {
         // uint256 deductable = baseShare.mul(percentage).div(100 ether);
         // uint256 share = baseShare.sub(deductable);
         uint256 share = baseShare;
-        avatars[newId] = Avatar({tokenShare: share, lastClaimPrice: totalRoyalties});
+        lastClaimPrice[newId] = totalRoyalties;
         emit MintToken(newId, share, _recipient);
         return share;
     }
@@ -54,13 +54,13 @@ contract Avatars is ERC721Enumerable {
     function claim(uint256 tokenID) public {
         require(ownerOf(tokenID) == msg.sender, 'Must be the owner');
 
-        uint256 lastClaim = avatars[tokenID].lastClaimPrice;
+        uint256 lastClaim = lastClaimPrice[tokenID];
         require(lastClaim < totalRoyalties, 'Nothing to claim');
 
         uint256 amount = totalRoyalties.sub(lastClaim).div(totalNFTs);
         payable(msg.sender).transfer(amount);
 
-        avatars[tokenID].lastClaimPrice = totalRoyalties;
+        lastClaimPrice[tokenID] = totalRoyalties;
     }
 
     function claimMulti(uint256[] memory tokenIDs) external {
@@ -85,8 +85,8 @@ contract Avatars is ERC721Enumerable {
     }
 
     function pendingRoyalties(uint256 tokenID) external view returns (uint256) {
-        uint256 lastClaim = avatars[tokenID].lastClaimPrice;
-        uint256 amount = totalRoyalties.sub(lastClaim).mul(avatars[tokenID].tokenShare).div(100 ether);
+        uint256 lastClaim = lastClaimPrice[tokenID];
+        uint256 amount = totalRoyalties.sub(lastClaim).div(totalNFTs);
         return amount;
     }
 

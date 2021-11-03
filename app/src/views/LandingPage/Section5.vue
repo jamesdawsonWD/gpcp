@@ -4,10 +4,9 @@
             <div class="content-container">
                 <div class="info">
                     <div class="text">
-                        <h2>Join the <span>community</span> and prepare for the party</h2>
+                        <h2>Join the <span>community</span> and say hello!</h2>
                         <p class="sub-title">
-                            Don't miss out on the biggest Guinea Pig party that the MetaVerse has to offer.
-                            Grab your costume and lets get ready!
+                           We have on-going <span class="bold">competitions, rewards, giveaways, dicussions</span> and much more happening over on the <span class="bold">discord</span>. Drop in and say hi!
                         </p>
                     </div>
                     <a href="https://discord.gg/bT9q7r2vaT" target="_blank"

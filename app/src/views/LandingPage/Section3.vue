@@ -4,8 +4,7 @@
             <div ref="title" class="roadmap-title">
                 <h2>Roadmap</h2>
                 <p>
-                    This is our roadmap towards an interactive and customisable Guinea Pig Verse. We will be
-                    adding to and improving this roadmap regularly, so stay tuned!
+                    This is a project built for a community and our community will decide the roadmap GPCP. With <span class="bold green">40%</span> of the initial sale and <span class="bold green">75%</span> of royalties going to the developer fund we will be able to create whatever we want.
                 </p>
             </div>
             <RoadmapArticle
@@ -19,7 +18,7 @@
                 :ref="'article' + index"
             />
             <div class="roadmap-end">
-                <h2>THEN WE KEEP EXPLORING THE GUINEA PIG PARTY!</h2>
+                <h2>We keep building and work together. WGMI</h2>
             </div>
             <div class="progress-bar">
                 <div class="circle"></div>
@@ -120,24 +119,24 @@ export default {
                     title: 'DEVELOP INITIAL GUINEA PIGS',
                     reached: true,
                     description:
-                        'We are currently still developing the art and technology to get this amazing party started. You can check us out over at the discord, we want to hear from the sers that want to attend the party.'
+                        'We will release the initial NFTs on Immutable X to our community.'
                 },
                 {
-                    title: 'RELEASE 5,555 GENISIS TOKENS',
+                    title: 'Vote #1',
                     reached: false,
                     description:
-                        'The launch date will be announced, bow ties will be tied and the party will commence. Bring the champers and all the pea flakes you can fit in your mouth. This is going to be a banger.'
+                        'The community will decide what the next path is for the project after the release'
                 },
                 {
-                    title: 'DEVELOP "PEA FLAKE" ERC-20 TOKEN',
+                    title: 'Vote #2',
                     reached: false,
                     description:
-                        '"Pea flakes" are a Guinea Pig\'s favourite treat. This is well known alpha. Pea flakes are valuable to a pig and they are tasty. Pea flakes may be valuable to other pigs. Pea flakes may allow you into speacial places and purchase speacial things. Tasty treat treats.'
+                        'TBA'
                 },
                 {
-                    title: '???',
+                    title: 'Vote #2',
                     reached: false,
-                    description: 'TOP SECRET PEA FLAKE ALPHA COMING SOON'
+                    description: 'TBA'
                 }
             ]
         };
@@ -147,6 +146,14 @@ export default {
 <style lang="scss">
 @import '@/styles';
 
+.bold {
+    font-weight: 800;
+}
+
+
+.green {
+    color: var(--button-color) !important;
+}
 .section3 {
     position: relative;
     background: white;

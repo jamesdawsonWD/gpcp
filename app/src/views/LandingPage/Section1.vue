@@ -8,8 +8,7 @@
                     COSTUME PARTY
                 </h1>
                 <p class="sub-title">
-                    You have been invited to the party of the century. Grab your Guinea Pig and their
-                    favourite outfit and prepare to get groovy.
+                    A collection of adorable Guinea Pig art on Immutable X and a community focused DAO with a speacial interest in the gaming Metaverse.
                 </p>
                 <a href="https://discord.gg/bT9q7r2vaT" target="_blank"
                     ><Button buttonStyle="primary" title="JOIN DISCORD"

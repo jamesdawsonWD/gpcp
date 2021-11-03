@@ -5,11 +5,9 @@
                 <img class="guineapig-gif" src="@/assets/gif/Guineapig.gif" />
                 <div class="info">
                     <div class="text">
-                        <h2><span>5,555</span> unique and wonderful pigs</h2>
+                        <h2><span>7,777</span> unique and wonderful pigs</h2>
                         <p class="sub-title">
-                            There will be 5,555 invitations sent out to join the party. The guinea pigs will
-                            come sporting some of the best fashion and costumes know to the Guinea Pig World.
-                            Which one do you want?
+                            The costume party will consist of many different wonderful Guinea Pigs, each with their own unique traits. Each NFT will give access to the <span class="bold green">exclusive alpha channels</span> on the discord server and access to any future content that is released by the DAO. Which one do you want?
                         </p>
                     </div>
                     <a class="discord-button" href="https://discord.gg/bT9q7r2vaT" target="_blank"

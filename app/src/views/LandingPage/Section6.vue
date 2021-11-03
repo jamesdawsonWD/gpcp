@@ -7,7 +7,7 @@
                         <div class="logo-container">
                             <h2>G.P <sushi class="image-4" /> C.P</h2>
                         </div>
-                        <p>5,555 unique and wonderful pigs</p>
+                        <p>7,777 unique and wonderful pigs</p>
                     </div>
                     <p>©2021 TallGrass Studios. All rights reserved.</p>
                 </div>
@@ -20,7 +20,7 @@
                     <a href="https://discord.gg/bT9q7r2vaT" target="_blank"
                         ><discord class="social-media"
                     /></a>
-                    <a href="https://twitter.com/GPCP_community"><twitter class="social-media"/></a>
+                    <a href="https://twitter.com/GPCP_imx"><twitter class="social-media"/></a>
                 </div>
             </div>
         </div>
