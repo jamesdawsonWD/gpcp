@@ -3,15 +3,12 @@
         <Header />
         <section>
             <div class="header">
+                <h1>{{ AVATARS_getTotalSupply == '' ? '?' : AVATARS_getTotalSupply }} / 5000</h1>
                 <h1>
                     GUINEA PIG<br />
-                    COSTUME PARTY
+                    COSTUME PARTY SOLD
                 </h1>
-                <p class="sub-title">
-                    You have been invited to the party of the century. Grab your Guinea Pig and their
-                    favourite outfit and prepare to get down and boogie.
-                </p>
-                <h2>{{ AVATARS_getTotalSupply == '' ? '?' : AVATARS_getTotalSupply }} / 5000 SOLD</h2>
+
                 <h4>
                     I want
                     <input type="number" id="quantity" name="quantity" min="1" max="5" v-model="numTokens" />
@@ -26,6 +23,14 @@
         </section>
         <side1 class="side1" />
         <side2 class="side2" />
+        <lottie-animation
+            path="lottie/scrolldown.json"
+            class="scrolldown"
+            :loop="true"
+            :height="200"
+            :width="200"
+            :speed="1"
+        />
     </div>
 </template>
 
@@ -39,6 +44,8 @@ import Button from '@/components/generics/Button.vue';
 import Header from '@/components/Header.vue';
 import side1 from '@/assets/svg/Guineapig-side1.svg';
 import side2 from '@/assets/svg/Guineapig-side2.svg';
+import LottieAnimation from 'lottie-vuejs/src/LottieAnimation.vue';
+
 // import Button from '@/components/generics/Button.vue';
 export default {
     name: 'LandingPage',
@@ -71,7 +78,8 @@ export default {
         Button,
         Header,
         side1,
-        side2
+        side2,
+        LottieAnimation
     }
 };
 </script>
@@ -83,6 +91,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: start;
+    height: 100vh;
     width: 100%;
     flex-direction: column;
     z-index: 4;
@@ -105,6 +114,13 @@ export default {
             h4 {
                 margin-top: 100px;
             }
+        }
+        .scrolldown {
+            position: absolute;
+            opacity: 0;
+            bottom: -20px;
+            left: 0;
+            right: 0;
         }
     }
     @include breakpoint(tablet) {
@@ -176,7 +192,7 @@ export default {
         }
     }
     section {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -211,6 +227,13 @@ export default {
     }
 }
 
+.scrolldown {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
 .arrow {
     margin-top: 10px;
     transform: scale(0.6);

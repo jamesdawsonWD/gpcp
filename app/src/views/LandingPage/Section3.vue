@@ -4,8 +4,7 @@
             <div ref="title" class="roadmap-title">
                 <h2>Roadmap</h2>
                 <p>
-                    This roadmap outlines our goals and where we want to take. We have a lot of ideas and
-                    concepts that we are working on. It may evolve over time and hopefully become even better!
+                   The roadmap is to break free from our cages and continue with our<span class="bold green"> God given right to party</span>! No longer shall we bow down to our human overlords. We shall break free! 
                 </p>
             </div>
             <RoadmapArticle
@@ -19,7 +18,7 @@
                 :ref="'article' + index"
             />
             <div class="roadmap-end">
-                <h2>THEN WE KEEP EXPLORING THE GUINEA PIG PARTY!</h2>
+                <h2>PAAARTTTTY</h2>
             </div>
             <div class="progress-bar">
                 <div class="circle"></div>
@@ -120,13 +119,13 @@ export default {
                     title: 'DEVELOP INITIAL GUINEA PIGS',
                     reached: true,
                     description:
-                        'We are currently still developing the art and technology to get this amazing party started. You can check us out over at the discord, we want to hear from the sers that want to attend the party.'
+                        'We will release the initial NFTs on Immutable X to our community.'
                 },
                 {
                     title: 'RELEASE 5,000 GENISIS TOKENS',
                     reached: true,
                     description:
-                        'The launch date will be announced, bow ties will be places and the party will commence. Bring the champers and all the pea flakes you can fit in your mouth. This is going to be a banger.'
+                        'The community will decide what the next path is for the project after the release'
                 },
                 {
                     title: 'REINVEST INTO THE ECOSYSTEM',
@@ -135,9 +134,9 @@ export default {
                         '"A portion of the money earned from the launch will be reinvested into the ecosystem. Rewarding all out fellow guinea pigs!"'
                 },
                 {
-                    title: '???',
+                    title: 'DESTROY ALL HUMANS',
                     reached: false,
-                    description: 'TOP SECRET ALPHA COMING SOON'
+                    description: 'TBA'
                 }
             ]
         };
@@ -147,6 +146,14 @@ export default {
 <style lang="scss">
 @import '@/styles';
 
+.bold {
+    font-weight: 800;
+}
+
+
+.green {
+    color: var(--button-color) !important;
+}
 .section3 {
     position: relative;
     background: white;
@@ -396,7 +403,7 @@ export default {
     @include breakpoint(desktop) {
         padding-bottom: 300px;
         .roadmap {
-            width: 1500px;
+            width: 1300px;
 
             .roadmap-title {
                 width: 600px;
@@ -419,7 +426,7 @@ export default {
             opacity: 1;
             right: 50px;
             img {
-                height: 300px;
+                height: 250px;
             }
         }
     }

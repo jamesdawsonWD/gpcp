@@ -14,11 +14,13 @@
             </div>
             <div class="nav-container">
                 <div class="nav">
-                    <opensea class="social-media" />
+                    <a href="https://opensea.io/collection/guinea-pig-costume-party" target="_blank">
+                        <opensea class="social-media" />
+                    </a>
                     <a href="https://discord.gg/bT9q7r2vaT" target="_blank"
                         ><discord class="social-media"
                     /></a>
-                    <a href="https://twitter.com/GPCP_community"><twitter class="social-media"/></a>
+                    <a href="https://twitter.com/GPCP__"><twitter class="social-media"/></a>
                 </div>
             </div>
         </div>

@@ -212,7 +212,9 @@ export default {
                         text-align: left;
                         margin: 0;
                     }
-
+                    .sub-title {
+                        width: 450px;
+                    }
                     p {
                         text-align: left;
                     }

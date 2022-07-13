@@ -4,10 +4,9 @@
             <div class="content-container">
                 <div class="info">
                     <div class="text">
-                        <h2>Join the <span>community</span> and prepare for the party</h2>
+                        <h2>Join the <span>community</span> and say hello!</h2>
                         <p class="sub-title">
-                            You have been invited to the party of the century. Grab your Guinea Pig and their
-                            favourite outfit and prepare to get down and boogie.
+                           We have on-going <span class="bold">competitions, rewards, giveaways, dicussions</span> and much more happening over on the <span class="bold">discord</span>. Drop in and say hi!
                         </p>
                     </div>
                     <a href="https://discord.gg/bT9q7r2vaT" target="_blank"
@@ -186,7 +185,7 @@ export default {
         }
         .side3 {
             position: absolute;
-            height: 1000px;
+            height: 900px;
             right: -250px;
             bottom: -30px;
             z-index: 6;
@@ -195,12 +194,12 @@ export default {
     }
     @include breakpoint(desktop) {
         .section-content {
-            width: 1400px;
+            width: 1200px;
             justify-content: flex-start;
             align-items: flex-start;
             .content-container {
                 .info {
-                    width: 1000px;
+                    width: 700px;
                     margin-left: 0;
                     text-align: left;
                 }

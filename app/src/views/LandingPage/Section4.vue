@@ -17,7 +17,7 @@
                     <img :src="require(`@/assets/img/` + item.image)" />
                     <div class="name-info">
                         <h3>{{ item.name }}</h3>
-                        <a href="https://twitter.com/mr_nft1"><twitter class="twitter-logo"/></a>
+                        <a v-if="item.twitter != ''" :href="item.twitter"><twitter class="twitter-logo"/></a>
                     </div>
                 </div>
             </div>
@@ -41,23 +41,28 @@ export default {
             team: [
                 {
                     name: 'James',
-                    twitter: 'www.twitter.com/mr_nft1',
+                    twitter: 'https://www.twitter.com/mr_nft1',
                     image: 'jamesavatar.jpg'
                 },
                 {
                     name: 'Rami',
-                    twitter: 'www.twitter.com',
+                    twitter: '',
                     image: '6.png'
                 },
                 {
                     name: 'Andrew',
-                    twitter: 'www.twitter.com/adawson111',
+                    twitter: 'https://www.twitter.com/adawson111',
                     image: '4.png'
                 },
                 {
                     name: 'Gareth',
-                    twitter: 'www.twitter.com',
+                    twitter: 'https://www.twitter.com/gdawson771',
                     image: '8.png'
+                },
+                {
+                    name: 'Declan',
+                    twitter: 'https://www.twitter.com/pl0xy',
+                    image: 'declan.png'
                 }
             ]
         };
@@ -134,6 +139,8 @@ export default {
                 }
                 .name-info {
                     margin-top: 10px;
+                    height: 70px;
+
                     width: 300px;
                     display: flex;
                     justify-content: space-between;
@@ -166,7 +173,9 @@ export default {
     @include breakpoint(mobileonly) {
         .section-content {
             width: 400px;
-
+            .sub-title {
+                width: 300px;
+            }
             .team {
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -175,7 +184,9 @@ export default {
     @include breakpoint(tablet) {
         .section-content {
             width: 700px;
-
+            .sub-title {
+                width: 500px;
+            }
             .team {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -184,7 +195,9 @@ export default {
     @include breakpoint(phablet) {
         .section-content {
             width: 450px;
-
+            .sub-title {
+                width: 400px;
+            }
             .team {
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -210,6 +223,9 @@ export default {
                     color: white;
                 }
             }
+            .sub-title {
+                width: 700px;
+            }
             .team {
                 grid-template-columns: repeat(2, 1fr);
                 width: 100%;
@@ -220,7 +236,7 @@ export default {
     }
     @include breakpoint(desktop) {
         .section-content {
-            width: 1500px;
+            width: 1300px;
 
             text-align: center;
 
@@ -238,6 +254,9 @@ export default {
                 p {
                     color: white;
                 }
+            }
+            .sub-title {
+                width: 800px;
             }
             .team {
                 grid-template-columns: repeat(3, 1fr);
