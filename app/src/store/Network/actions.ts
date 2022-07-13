@@ -45,7 +45,7 @@ export const actions: ActionTree<Network, RootState> = {
         const { Address } = context.getters;
         await context.dispatch('setupWeb3');
         await context.dispatch('getNetworkData');
-        await context.dispatch('NETWORK_setupAvatars', { address: '0xC099D1FE1317c14020f913D84530464697521C70' });
+        await context.dispatch('NETWORK_setupAvatars', { address: '0x9Bb07D764066BA52FCf7dE13fEaCd6aE78dC697f' });
 
     },
 

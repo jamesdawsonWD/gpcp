@@ -15,7 +15,7 @@
                 <h4>
                     I want
                     <input type="number" id="quantity" name="quantity" min="1" max="5" v-model="numTokens" />
-                    guinea pig <span v-if="numTokens > 1">'s</span> please!
+                    guinea pig<span v-if="numTokens > 1">s</span> please!
                 </h4>
                 <Button
                     buttonStyle="primary"
