@@ -23,14 +23,6 @@
         </section>
         <side1 class="side1" />
         <side2 class="side2" />
-        <lottie-animation
-            path="lottie/scrolldown.json"
-            class="scrolldown"
-            :loop="true"
-            :height="200"
-            :width="200"
-            :speed="1"
-        />
     </div>
 </template>
 
@@ -44,7 +36,6 @@ import Button from '@/components/generics/Button.vue';
 import Header from '@/components/Header.vue';
 import side1 from '@/assets/svg/Guineapig-side1.svg';
 import side2 from '@/assets/svg/Guineapig-side2.svg';
-import LottieAnimation from 'lottie-vuejs/src/LottieAnimation.vue';
 
 // import Button from '@/components/generics/Button.vue';
 export default {
@@ -78,8 +69,7 @@ export default {
         Button,
         Header,
         side1,
-        side2,
-        LottieAnimation
+        side2
     }
 };
 </script>
