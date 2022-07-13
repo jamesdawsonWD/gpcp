@@ -2,12 +2,12 @@
     <div class="section2">
         <div class="section-content">
             <div class="content-container">
-                <img class="guineapig-gif" src="@/assets/gif/Guineapig.gif" />
+                <img class="guineapig-gif" src="@/assets/gif/guineapig.gif" />
                 <div class="info">
                     <div class="text">
-                        <h2><span>5,555</span> unique and wonderful pigs</h2>
+                        <h2><span>5,000</span> unique and wonderful pigs</h2>
                         <p class="sub-title">
-                            There will be 5,555 invitations sent out to join the party. The guinea pigs will
+                            There will be 5,000 invitations sent out to join the party. The guinea pigs will
                             come sporting some of the best fashion and costumes know to the Guinea Pig World.
                             Which one do you want?
                         </p>
@@ -23,13 +23,11 @@
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue';
 import { mapActions } from 'vuex';
 import { mapGetters } from 'vuex';
 import web3 from 'Web3';
 import Button from '@/components/generics/Button.vue';
 
-// import Button from '@/components/generics/Button.vue';
 export default {
     name: 'Section2',
     computed: {

@@ -90,6 +90,13 @@ module.exports = {
             network_id: '*',
             gasPrice: 70000000000
         },
+        kovan: {
+            provider: function() {
+                return new HDWalletProvider(MNEMONIC, 'https://ropsten.infura.io/v3/' + INFURA_KEY);
+            },
+            network_id: '*',
+            gasPrice: 70000000000
+        },
 
         live: {
             network_id: 1,

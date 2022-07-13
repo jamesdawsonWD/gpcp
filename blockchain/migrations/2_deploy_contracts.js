@@ -1,12 +1,11 @@
-const Avatars = artifacts.require('Avatars.sol');
+const GPCP = artifacts.require('GPCP.sol');
 module.exports = async function(deployer, _network, accounts) {
     await deployer.deploy(
-        Avatars,
-        'Avatars',
-        'AVA',
-        web3.utils.toWei('0.04', 'ether'),
-        web3.utils.toWei('0.001', 'ether'),
-        5000
+        GPCP,
+        'Guinea Pig Costume Party',
+        'GPCP',
+        'ipfs://QmQKiBwJTYHuTsVnTkpqk7ATzBeKD3VmhReQpifwdMB2HX/',
+        'ipfs://QmQKiBwJTYHuTsVnTkpqk7ATzBeKD3VmhReQpifwdMB2HX/'
     );
-    const avatars = await Avatars.deployed();
+    const gpcp = await GPCP.deployed();
 };

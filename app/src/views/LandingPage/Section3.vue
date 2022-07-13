@@ -109,10 +109,10 @@ export default {
                 '8.png',
                 '9.png',
                 '10.png',
-                '11.jpg',
-                '12.jpg',
-                '13.jpg',
-                '14.jpg',
+                '11.png',
+                '12.png',
+                '13.png',
+                '14.png',
                 'jamesavatar.jpg'
             ],
             roadmap: [
@@ -123,16 +123,16 @@ export default {
                         'We are currently still developing the art and technology to get this amazing party started. You can check us out over at the discord, we want to hear from the sers that want to attend the party.'
                 },
                 {
-                    title: 'RELEASE 5,555 GENISIS TOKENS',
-                    reached: false,
+                    title: 'RELEASE 5,000 GENISIS TOKENS',
+                    reached: true,
                     description:
                         'The launch date will be announced, bow ties will be places and the party will commence. Bring the champers and all the pea flakes you can fit in your mouth. This is going to be a banger.'
                 },
                 {
-                    title: 'DEVELOP "PEA FLAKE" ERC-20 TOKEN',
+                    title: 'REINVEST INTO THE ECOSYSTEM',
                     reached: false,
                     description:
-                        '"Pea flakes" are a Guinea Pigs favourite treat. This is well known alpha. Pea flakes are valuable to a pig and they are tasty. Pea flakes may be valuable to other pigs. Pea flakes may allow you into speacial places and purchase speacial things. Tasty treat treats.'
+                        '"A portion of the money earned from the launch will be reinvested into the ecosystem. Rewarding all out fellow guinea pigs!"'
                 },
                 {
                     title: '???',

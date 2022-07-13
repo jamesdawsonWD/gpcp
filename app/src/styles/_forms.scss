@@ -3,7 +3,22 @@ input {
     border: none;
     outline: none;
 }
-
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+input[type=number] {
+    background: transparent;
+    font-size: 20pt;
+    color: var(--button-color);
+    text-align: center;
+    @include FS_Super_Bold;
+}
 .form-row {
     width: 100%;
     position: relative;
@@ -18,7 +33,6 @@ input {
         font-size: var(--sm-font);
 
         @include FS_Light;
-
     }
 
     input {

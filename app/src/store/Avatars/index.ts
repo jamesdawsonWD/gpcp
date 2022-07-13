@@ -3,6 +3,7 @@ import { RootState, Avatars } from '../types';
 
 export const state: Avatars = {
     balance: '',
+    totalSupply: '',
     tokens: {}
 };
 

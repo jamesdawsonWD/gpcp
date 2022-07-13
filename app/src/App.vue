@@ -29,7 +29,6 @@ export default {
             }
         });
 
-        const accounts = await window.ethereum.enable();
     }
 };
 </script>

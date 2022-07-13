@@ -24,12 +24,12 @@ export interface NetworkData {
     networkId: number;
 }
 
-
 export interface Avatars {
     balance: string;
+    totalSupply: string;
     tokens: {
         [key: string]: Avatar;
-    }
+    };
 }
 
 export interface Avatar {
@@ -47,7 +47,6 @@ export interface TokenInfo {
     name: string;
     balance: string;
 }
-
 
 export interface UserInterfaceManager {
     isLoading: boolean;

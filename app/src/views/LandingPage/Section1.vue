@@ -11,9 +11,17 @@
                     You have been invited to the party of the century. Grab your Guinea Pig and their
                     favourite outfit and prepare to get down and boogie.
                 </p>
-                <a href="https://discord.gg/bT9q7r2vaT" target="_blank"
-                    ><Button buttonStyle="primary" title="JOIN DISCORD"
-                /></a>
+                <h2>{{ AVATARS_getTotalSupply == '' ? '?' : AVATARS_getTotalSupply }} / 5000 SOLD</h2>
+                <h4>
+                    I want
+                    <input type="number" id="quantity" name="quantity" min="1" max="5" v-model="numTokens" />
+                    guinea pig <span v-if="numTokens > 1">'s</span> please!
+                </h4>
+                <Button
+                    buttonStyle="primary"
+                    :title="'MINT ' + (0.015 * numTokens).toFixed(3) + ' Ξ'"
+                    @clicked="openMint()"
+                />
             </div>
         </section>
         <side1 class="side1" />
@@ -35,10 +43,29 @@ import side2 from '@/assets/svg/Guineapig-side2.svg';
 export default {
     name: 'LandingPage',
     computed: {
-        ...mapGetters(['ST_getAll', 'Address', 'TOKEN_balanceOf'])
+        ...mapGetters(['ST_getAll', 'Address', 'TOKEN_balanceOf', 'AVATARS_getTotalSupply'])
+    },
+    data() {
+        return {
+            numTokens: 1
+        };
+    },
+    watch: {
+        // whenever question changes, this function will run
+        numTokens(newQuestion, oldQuestion) {
+            if (newQuestion > 20) {
+                this.numTokens = 20;
+            }
+            if (newQuestion == undefined || newQuestion == '') {
+                this.numTokens = 1;
+            }
+        }
     },
     methods: {
-        ...mapActions(['TOKENS_balanceOf'])
+        ...mapActions(['TOKENS_balanceOf', 'UIM_openModal', 'AVATARS_buy']),
+        openMint() {
+            this.AVATARS_buy({ amount: this.numTokens });
+        }
     },
     components: {
         Button,
@@ -75,6 +102,9 @@ export default {
         }
         .header {
             width: 400px;
+            h4 {
+                margin-top: 100px;
+            }
         }
     }
     @include breakpoint(tablet) {
@@ -90,6 +120,9 @@ export default {
         }
         .header {
             width: 500px;
+            h4 {
+                margin-top: 100px;
+            }
         }
     }
     @include breakpoint(phablet) {
@@ -105,6 +138,9 @@ export default {
         }
         .header {
             width: 500px;
+            h4 {
+                margin-top: 150px;
+            }
         }
     }
 
@@ -159,6 +195,10 @@ export default {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        h2 {
+            margin-top: 70px;
+        }
 
         button {
             width: 300px;

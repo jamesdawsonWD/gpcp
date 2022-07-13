@@ -4,7 +4,7 @@ import { RootState, Network } from '../types';
 import Web3 from 'web3';
 // import EMP from '@/../../blockchain/build/contracts/ExpiringMultiParty.json';
 import ERC20 from '@/../../blockchain/build/contracts/ERC20.json';
-import Avatars from '@/../../blockchain/build/contracts/Avatars.json';
+import Avatars from '@/../../blockchain/build/contracts/GPCP.json';
 import { addressZero } from '@/utils';
 
 export const actions: ActionTree<Network, RootState> = {
@@ -45,7 +45,7 @@ export const actions: ActionTree<Network, RootState> = {
         const { Address } = context.getters;
         await context.dispatch('setupWeb3');
         await context.dispatch('getNetworkData');
-        await context.dispatch('NETWORK_setupAvatars', { address: '0x7F71541f34e2C04ad7d42b2FA1c11Fad188503af' });
+        await context.dispatch('NETWORK_setupAvatars', { address: '0xC099D1FE1317c14020f913D84530464697521C70' });
 
     },
 

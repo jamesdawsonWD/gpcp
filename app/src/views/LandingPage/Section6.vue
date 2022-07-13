@@ -7,7 +7,7 @@
                         <div class="logo-container">
                             <h2>G.P <sushi class="image-4" /> C.P</h2>
                         </div>
-                        <p>5,555 unique and wonderful pigs</p>
+                        <p>5,000 unique and wonderful pigs</p>
                     </div>
                     <p>©2021 TallGrass Studios. All rights reserved.</p>
                 </div>
